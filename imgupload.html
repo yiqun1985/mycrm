@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 引入样式 */
+    @import url('css/styles.css');
+  </style>
+  <title>水单附件上传</title>
+</head>
+
+<body>
+  <div class="upload-container">
+    <label for="waterbill-attachment">水单附件</label>
+    <div class="upload-box" id="upload-box">
+      <span class="select-text" id="select-text">选择</span>
+      <span class="drag-drop-text"> 拖拽或单击后粘贴文件，单个500MB以内</span>
+      <input type="file" id="waterbill-attachment" accept="image/*" class="hidden">
+    </div>
+    <div class="paste-box hidden" id="paste-box">
+      <span class="paste-text">Ctrl+v 粘贴文件</span>
+    </div>
+    <button id="submit-btn" class="hidden">提交</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
